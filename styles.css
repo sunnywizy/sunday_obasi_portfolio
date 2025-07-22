@@ -1,0 +1,479 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+/* The Body Styles */
+body {
+    width: 100%;
+    margin: auto;
+    font-family: "Poppins", serif;
+    font-size: 24px;
+    color: #ffff;
+}
+
+/* The Header Design */
+header {
+    width: 100%;
+    margin: auto;
+    position: fixed; /* Makes it stay on top */
+    top: 0;          /* Stick to the top edge */
+    left: 0;
+    font-size: 20px;
+    z-index: 1000; /* Keeps it above other content */
+    background-color: #0E2148;
+}
+
+.navbar {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    color: white;
+    font-family: "Comic Neue", serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background: #7965C1;
+    border-radius: 5px;
+}
+
+/* Hide hamburger on large screens */
+.hamburger {
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+}
+
+/* Hero page on large screens */
+.hero-page {
+    width: 100%;
+    margin: auto;
+    padding-top: 6%;
+    background-color: #0E2148;
+}
+
+.hero-sub-page {
+    width: 80%;
+    margin: auto;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name {
+    width: 500px;
+    font-size: 60px;
+}
+
+.name span {
+    color: #7965C1;
+}
+
+.text-slider {
+    position: relative;
+    width: 400px;
+    height: 50px;
+    margin: 20px 0;
+    padding: 10px 20px;
+    overflow: hidden;
+    background: #7965C1;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 24px;
+    border-radius: 5px;
+}
+  
+.distigation {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease;
+    position: absolute;
+    font-weight: bold;
+    font-family: "Comic Neue", serif;
+}
+
+.hero-image img {
+   border-radius: 30px;
+   border-bottom: 5px solid #7965C1;
+}
+
+/* About me page on a large screen */
+.aboutme-sub-page {
+    width: 80%;
+    margin: auto;
+    padding: 30px 20px;
+    color: #000;
+    font-size: 20px;
+}
+
+.aboutme-sub-page h2{
+    width: 220px;
+    margin: 20px 0;
+    font-size: 40px;
+    color: #0E2148;
+    padding: 0 10px;
+    border-right: 4px solid #0E2148;
+    border-bottom: 4px solid #0E2148;
+}
+
+.aboutme-sub-page-2 {
+    margin: 40px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.aboutme-image img {
+    border-radius: 50px;
+    border-right: 5px solid #7965C1;
+    border-bottom: 5px solid #7965C1;
+}
+
+.aboutme-text {
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* Skill page design on large screen */
+.skill-page {
+    margin: 30px auto;
+    color: #fff;
+    background-color: #0E2148;
+}
+
+.skill-sub-page {
+    width: 80%;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.skill-sub-page .title-test {
+    width: 220px;
+    margin: 20px 0;
+    font-size: 40px;
+    padding: 0 10px;
+    border-right: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+}
+
+.skill-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.HTML, .CSS, .JavaScript, .GoogleWorkspace, .GraphicDesign, .MicrosoftTools {
+    margin: 30px 0;
+}
+
+.test {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: "Comic Neue", serif;
+}
+
+.rectangle-1 {
+    width: 400px;
+    height: 10px;
+    background: linear-gradient(to right, #7965C1 90%, #fff 10%);
+    border-radius: 4px;
+}
+
+.rectangle-2 {
+    width: 400px;
+    height: 10px;
+    background: linear-gradient(to right, #7965C1 70%, #fff 30%);
+    border-radius: 4px;
+}
+
+.rectangle-3 {
+    width: 400px;
+    height: 10px;
+    background: linear-gradient(to right, #7965C1 60%, #fff 40%);
+    border-radius: 4px;
+}
+
+.rectangle-4 {
+    width: 400px;
+    height: 10px;
+    background: linear-gradient(to right, #7965C1 80%, #fff 20%);
+    border-radius: 4px;
+}
+
+.rectangle-5 {
+    width: 400px;
+    height: 10px;
+    background: linear-gradient(to right, #7965C1 85%, #fff 15%);
+    border-radius: 4px;
+}
+
+.rectangle-6 {
+    width: 400px;
+    height: 10px;
+    background: linear-gradient(to right, #7965C1 90%, #fff 10%);
+    border-radius: 4px;
+}
+
+/* Contact Page Design for Large Screen */
+.contact-page {
+    margin: 30px auto;
+}
+
+.contact-sub-page {
+    width: 80%;
+    margin: auto;
+    padding: 30px 20px;
+    color: #0E2148;
+}
+
+.contact-sub-page h2 {
+    width: 270px;
+    margin: 20px 0;
+    font-size: 40px;
+    padding: 0 10px;
+    color: #0E2148;
+    border-right: 4px solid #0E2148;
+    border-bottom: 4px solid #0E2148;
+}
+
+.contact-article {
+    margin: 30px auto;
+}
+
+.get-in-touch-btn {
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 15px;
+    background-color: #0E2148;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.get-in-touch-btn:hover {
+    background-color: #7965C1;
+}
+
+.social-media-box {
+    width: 400px;
+    margin: auto;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 28px;
+    border: #1e1d20 2px dashed;
+}
+
+.social-media-box a {
+    color: #0E2148;
+}
+
+/* Footer page design for large screen */
+footer {
+    background-color:#0E2148 ;
+}
+.footer-page {
+   width: 80%;
+   margin: auto;
+   padding: 30px 20px;
+   display: flex;
+   justify-content: space-between;
+   gap: 30px;
+   font-size: 18px;
+}
+
+.footer-bio {
+    width: 500px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.footer-bio .logo {
+    margin: 10px 0;
+    font-family: "Comic Neue", serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-bio .logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-navbar {
+    width: 200px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-navbar p, .footer-socail-media p {
+    margin: 10px 0;
+}
+
+.footer-navbar p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-socail-media {
+    width: 200px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-socail-media p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-contact {
+    width: 500px;
+    font-size: 14px;
+}
+
+.footer-contact p {
+    margin: 10px 0;
+}
+
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background: #0E2148;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+    }
+    header {
+        width: 400px;
+        margin: auto;
+    }
+
+    .hero-page {
+        padding-top: 10%;
+    }
+
+    .hero-sub-page {
+        width: 400;
+        flex-direction: column;
+    }
+
+    .hero-tests {
+        width: 400px;
+    }
+
+    .name {
+        width: 300px;
+        margin: auto;
+    }
+
+    .small-screen {
+        position: relative;
+        width: 300px;
+        height: 50px;
+        margin: 20px auto;
+        padding: 10px 20px;
+        overflow: hidden;
+        background: #7965C1;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 24px;
+        border-radius: 5px;
+    }
+
+    .aboutme-sub-page-2 {
+        flex-direction: column;
+    }
+
+    .skill-box {
+        flex-direction: column;
+    }
+
+    .rectangle-1, .rectangle-2, .rectangle-3, .rectangle-4, .rectangle-5, .rectangle-6, .test {
+        width: 300px;
+    }
+
+    .contact-article {
+        width: 300px;
+        margin: auto;
+        text-align: justify;
+    }
+
+    .social-media-box {
+        width: 300px;
+        margin: auto;
+    }
+
+    .footer-page {
+        flex-direction: column;
+    }
+
+    .footer-bio, .footer-contact {
+        width: 300px;
+    }
+
+}
