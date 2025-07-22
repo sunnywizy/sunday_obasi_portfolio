@@ -173,6 +173,7 @@ header {
 
 /* Skill page design on large screen */
 .skill-page {
+    width: 100%;
     margin: 30px auto;
     color: #fff;
     background-color: #0E2148;
@@ -256,6 +257,7 @@ header {
 
 /* Contact Page Design for Large Screen */
 .contact-page {
+    width: 100%;
     margin: 30px auto;
 }
 
@@ -311,6 +313,7 @@ header {
 
 /* Footer page design for large screen */
 footer {
+    width: 100%;
     background-color:#0E2148 ;
 }
 .footer-page {
