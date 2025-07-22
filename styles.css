@@ -413,6 +413,7 @@ footer {
     }
 
     .hero-page {
+        width: 100%;
         padding-top: 10%;
     }
 
@@ -450,6 +451,11 @@ footer {
         flex-direction: column;
     }
 
+    .skill-page {
+        width: 100%;
+        margin: auto;
+    }
+
     .skill-box {
         flex-direction: column;
     }
@@ -466,6 +472,11 @@ footer {
 
     .social-media-box {
         width: 300px;
+        margin: auto;
+    }
+
+    footer {
+        width: 100%;
         margin: auto;
     }
 
