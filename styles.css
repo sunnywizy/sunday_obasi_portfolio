@@ -475,6 +475,7 @@ footer {
 
     .rectangle-1, .rectangle-2, .rectangle-3, .rectangle-4, .rectangle-5, .rectangle-6, .test {
         width: 300px;
+        margin: auto;
     }
 
     .contact-sub-page h2 {
