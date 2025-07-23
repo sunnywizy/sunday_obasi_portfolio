@@ -313,7 +313,6 @@ header {
 
 /* Footer page design for large screen */
 footer {
-    width: 100%;
     background-color:#0E2148 ;
 }
 .footer-page {
@@ -406,8 +405,8 @@ footer {
     }
 
     body {
-        width: 100%;
-        margin: auto;
+        background-color: #0E2148;
+        color: #fff;
     }
 
     img {
@@ -450,13 +449,15 @@ footer {
         border-radius: 5px;
     }
 
-    .aboutme-sub-page-2 {
-        flex-direction: column;
+    .aboutme-sub-page h2 {
+        color: #fff;
+        border-bottom: 4px solid #fff;
+        border-right: 4px solid #fff;
     }
 
-    .skill-page {
-        width: 100%;
-        margin: auto;
+    .aboutme-sub-page-2 {
+        flex-direction: column;
+        color: #fff;
     }
 
     .skill-box {
@@ -467,20 +468,27 @@ footer {
         width: 300px;
     }
 
+    .contact-sub-page h2 {
+        color: #fff;
+        border-bottom: 4px solid #fff;
+        border-right: 4px solid #fff;
+    }
+
     .contact-article {
         width: 300px;
         margin: auto;
         text-align: justify;
+        color: #fff;
     }
 
     .social-media-box {
         width: 300px;
         margin: auto;
+        border: 2px dashed#fff;
     }
 
-    footer {
-        width: 100%;
-        margin: auto;
+    .social-media-box a {
+        color: #fff;
     }
 
     .footer-page {
