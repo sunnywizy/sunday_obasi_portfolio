@@ -461,6 +461,7 @@ footer {
     }
 
     .skill-box {
+        width: 300px;
         margin: auto;
         flex-direction: column;
     }
