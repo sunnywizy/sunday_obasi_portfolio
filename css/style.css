@@ -1,0 +1,227 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+.header {
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    background-color: #3B38A0;
+    color: #fff;
+}
+  
+/* Navbar */
+.navbar {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    z-index: 1000;
+}
+  
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Comic Neue", cursive;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 24px;
+    color: #fff;
+}
+  
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+  
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+  
+.nav-links li a:hover {
+    color: #833AB4;
+}
+  
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+}
+  
+/* Content below navbar */
+.container {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px; /* Make space for fixed navbar */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills {
+    width: 400px;
+    margin: 20px auto;
+    padding: 5px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    font-family: "Comic Neue", cursive;
+    font-weight: 800;
+    background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(168, 49, 49, 1) 50%, rgba(173, 107, 21, 1) 100%);;
+}
+
+.content-1 {
+    width: 400px;
+    margin: 20px auto;
+    font-size: 28px;
+    color: #4d4d4d;
+}
+
+.hero-text {
+    width: 800px;
+    margin: 20px auto;
+    color: rgba(131, 58, 180, 1);
+    font-weight: 700;
+    font-size: 65px;
+}
+
+.btns {
+    width: 400px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resume-btn {
+    width: 180px;
+    padding: 10px 15px;
+    background-color: #3B38A0;
+    border-radius: 5px;
+}
+
+.resume-btn a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+}
+
+.project-btn {
+    width: 180px;
+    padding: 10px 15px;
+    border: 2px solid #3B38A0;
+    border-radius: 5px;
+}
+
+.project-btn a {
+    text-decoration: none;
+    color: #3B38A0;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+}
+
+.profile-img {
+    width: 400px;
+    margin: 50px auto 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-img img {
+    border-radius: 30px;
+    border: 10px solid #833AB4;
+}
+
+
+  
+/* Responsive - Mobile View */
+@media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background: #3B38A0;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .skills {
+        width: 300px;
+        font-size: 10px;
+    }
+
+    .content-1 {
+        width: 300px;
+        font-size: 20px;
+    }
+
+    .hero-text {
+        width: 300px;
+        font-size: 24px;
+    }
+
+    .btns {
+        width: 300px;
+        flex-direction: column;
+        
+    }
+
+    .resume-btn, .project-btn {
+        width: 100%;
+        margin: 10px auto;
+       
+    }
+
+    .profile-img {
+        width: 300px;
+    }
+}
