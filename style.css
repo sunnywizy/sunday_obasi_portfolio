@@ -12,6 +12,7 @@ body {
     font-weight: 500;
     font-style: normal;
     font-size: 24px;
+    background: #d8d7f0;
 }
 
 img {
@@ -84,9 +85,6 @@ main {
     padding-top: 100px; /* Make space for fixed navbar */
     font-family: Arial, sans-serif;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .skills {
@@ -99,7 +97,7 @@ main {
     font-size: 14px;
     font-family: "Comic Neue", cursive;
     font-weight: 800;
-    background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(168, 49, 49, 1) 50%, rgba(173, 107, 21, 1) 100%);;
+    background: linear-gradient(90deg,#833ab4 0%, #a83131 50%, #ad6b15 100%);;
 }
 
 .content-1 {
@@ -112,7 +110,9 @@ main {
 .hero-text {
     width: 800px;
     margin: 20px auto;
-    color: rgba(131, 58, 180, 1);
+    background: linear-gradient(to right, #833ab4, #a83131, #ad6b15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: 700;
     font-size: 65px;
 }
@@ -166,6 +166,70 @@ main {
     border: 10px solid #833AB4;
 }
 
+.about-me-page {
+    width: 100%;
+    margin: 30px auto;
+    background: linear-gradient(to right, #833ab4, #a83131, #ad6b15);
+    padding: 30px 60px;
+    border-radius: 20px;
+    text-align: justify;
+    font-size: 20px;
+    color: #fff;   
+}
+
+.about-me-text {
+    width: 200px;
+    margin: 30px 0;
+    font-size: 40px;
+}
+
+.my-name {
+    width: 700px;
+    margin: 30px 0;
+    font-size: 20px;
+    font-family: "Comic Neue", cursive;
+}
+
+.about-me-article {
+    margin: 30px auto;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.social-media-icons {
+    width: 300px;
+    margin: 30px auto;
+}
+
+.social-media-icons a .fa-brands {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    padding: 20px 30px;
+}
+
+footer {
+    width: 100%;
+    margin: auto;
+    background-color: #3B38A0;
+    color: #fff;
+}
+.footer-container {
+    width: 80%;
+    margin: 20px auto 0;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: "Comic Neue", cursive;
+}
+
+.terms-condition a {
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 0;
+}
 
   
 /* Responsive - Mobile View */
@@ -223,5 +287,34 @@ main {
 
     .profile-img {
         width: 300px;
+    }
+
+    .about-me-text {
+        font-size: 24px;
+    }
+
+    .my-name {
+        width: 200px;
+        font-size: 14px;
+        margin: auto;
+    }
+
+    .about-me-article {
+        font-size: 14px;
+    }
+
+    .social-media-icons {
+        width: 190px;
+        margin: auto;
+    }
+
+    .social-media-icons a .fa-brands {
+       text-align: center;
+        padding: 8px 20px;
+        font-size: 18px;
+    }
+
+    .footer-container {
+        font-size: 12px;
     }
 }
